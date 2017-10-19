@@ -1,0 +1,92 @@
+---
+layout: default
+title: Jobs
+permalink: /jobs/
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h1>Jobs</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1">
+            <h3>Find a Job</h3>
+            <p>
+                Are you a designer looking to contribute to open source
+                projects? Our job board has been built for you. We aim to have
+                a mix of paid and gratis (free) work on our job board.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <h3>Post a Job</h3>
+            <p>
+            Need a logo designed, usability study, or a new interface?
+            Our diverse community and network have got you covered.
+            Posting gratis (free) and paid gigs welcome.
+            </p>
+            <p>
+                <a class="btn btn-primary" href="/jobs/job-form/">Post A Job Now</a>
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <h2>Current Postings</h2>
+            <ul class="job-list">
+                {% for post in site.posts %}
+                {% if post.layout == 'jobs' and post.status == 'searching' %}
+                {% unless post.title contains 'Job Title' %}{% comment %} Filter out the example page {% endcomment %}
+                <li>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <span class="organization">
+                                {{ post.organization }}
+                            </span>
+                        </div>
+                        <div class="col-md-8">
+                            <span class="status {{ post.status }}">
+                                {{ post.status }}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>
+                                <a class="post.link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+                                    {{ post.title }}
+                                </a>
+                            </h2>
+                            {% if post.compensation == "gratis" %}
+                            <span class="compensation gratis">
+                                &#10084; {{ post.compensation }}
+                            {% else %}
+                            <span class="compensation paid">
+                                &dollar; {{ post.compensation }}
+                            {% endif %}
+                            </span>
+                            {% if post.role %}
+                            <span class="role">{{ post.role }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                </li>
+                {% endunless %}
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <ul>
+                <li>More comfortable with Git? Use our <a href="https://github.com/opensourcedesign/jobs">git based method</a>.</li>
+                <li>Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></li>
+                <li>Checkout other places like: <a href="https://www.fossjobs.net" target="_blank">FOSS Jobs</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

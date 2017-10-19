@@ -3,8 +3,6 @@
 ---
 @charset "utf-8";
 
-
-
 // Our variables
 $base-font-family: 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
 $base-font-size:   16px;
@@ -38,8 +36,6 @@ $grayscale-light: #fff !default;
 $grayscale-body-font-family: $lora;
 $grayscale-headline-font-family: $montserrat;
 
-
-
 /* Vendor imports */
 @import "vendor/_bootstrap.variables",
         "vendor/_bootstrap.mixins",
@@ -62,27 +58,5 @@ $grayscale-headline-font-family: $montserrat;
         "syntax-highlighting",
         "front_page",
         "post",
-        "summit";
-/*
-
-@font-face {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Open Sans'), local('OpenSans'), url(/fonts/OpenSans-Regular.ttf) format('ttf');
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: 100;
-	src: local('Open Sans Light'), local('OpenSans-Light'), url(/fonts/OpenSans-Light.ttf) format('ttf');
-}
-
-@font-face {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: bold;
-	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(/fonts/OpenSans-Bold.ttf) format('ttf');
-}
-*/
+        "summit",
+        "jobs";
