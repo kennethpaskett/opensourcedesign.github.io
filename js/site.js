@@ -57,10 +57,8 @@ function foo(response) {
 }
 
 var script = document.createElement('script');
-script.src = 'https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/events?callback=foo';
-
+script.src = document.urls.github_api + '?callback=foo';
 document.getElementsByTagName('head')[0].appendChild(script);
-
 
 /*
  * parse_link_header()
@@ -103,12 +101,6 @@ function excerpt_text( str, limit ) {
   return str.substring(0, limit) + ' ...';
 }
 
-/*!
- * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
@@ -118,32 +110,18 @@ $(window).scroll(function() {
     }
 });
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
-
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-
-// Fetch Events
-
 $(document).ready(function() {
-  var template_item = _.template($('#template-events-item').html());
-  var url = 'http://opensourcedesign.net/events/feed.xml';
-  
+
+  // Fetch Events
+  var template_item = _.template($('#template-events-item').html()); 
   var items_html = '';
   $.ajax({
-    url: url, 
+    url: document.urls.rss_events,
     success: function(d){
       $('#events-snapshot').html('');
       $(d).find('item').each(function(idx) {
@@ -162,18 +140,12 @@ $(document).ready(function() {
       $('#events-snapshot').text('Sorry, but we couldn\'t load the events...');
     }
   });
-});
 
-
-// Fetch Jobs
-
-$(document).ready(function() {
+  // Fetch Jobs
   var template_item = _.template($('#template-events-item').html());
-  var url = 'http://opensourcedesign.net/jobs/feed.xml';
-
   var items_html = '';
   $.ajax({
-    url: url, 
+    url: document.urls.rss_jobs,
     success: function(d){
       $('#jobs-snapshot').html('');
       $(d).find('item').each(function(idx) {

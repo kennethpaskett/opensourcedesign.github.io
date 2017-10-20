@@ -1,0 +1,3170 @@
+[
+  {
+    "id": "6739064733",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 485583,
+      "login": "simonv3",
+      "display_login": "simonv3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/simonv3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/485583?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 223356099,
+        "number": 100,
+        "title": "It should be possible to interact/comment on each job",
+        "user": {
+          "login": "jancborchardt",
+          "id": 925062,
+          "avatar_url": "https://avatars2.githubusercontent.com/u/925062?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jancborchardt",
+          "html_url": "https://github.com/jancborchardt",
+          "followers_url": "https://api.github.com/users/jancborchardt/followers",
+          "following_url": "https://api.github.com/users/jancborchardt/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jancborchardt/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jancborchardt/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jancborchardt/subscriptions",
+          "organizations_url": "https://api.github.com/users/jancborchardt/orgs",
+          "repos_url": "https://api.github.com/users/jancborchardt/repos",
+          "events_url": "https://api.github.com/users/jancborchardt/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jancborchardt/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 175013772,
+            "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/labels/enhancement",
+            "name": "enhancement",
+            "color": "84b6eb",
+            "default": true
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": {
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1",
+          "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/milestone/1",
+          "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1/labels",
+          "id": 2399335,
+          "number": 1,
+          "title": "Job Board Reboot",
+          "description": "We have a barely functioning (but has had some success) job board. We have lots of issues & ideas of how to improve it, let's try to get a lot of these hammered out and implemented sooner rather than later. \r\n\r\nI'm setting a goal to achieve this for OSCAL 2017",
+          "creator": {
+            "login": "bnvk",
+            "id": 48677,
+            "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/bnvk",
+            "html_url": "https://github.com/bnvk",
+            "followers_url": "https://api.github.com/users/bnvk/followers",
+            "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+            "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+            "organizations_url": "https://api.github.com/users/bnvk/orgs",
+            "repos_url": "https://api.github.com/users/bnvk/repos",
+            "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/bnvk/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 7,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2017-03-20T22:41:47Z",
+          "updated_at": "2017-04-25T14:19:14Z",
+          "due_on": "2017-05-13T07:00:00Z",
+          "closed_at": null
+        },
+        "comments": 7,
+        "created_at": "2017-04-21T11:25:54Z",
+        "updated_at": "2017-10-19T15:11:59Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Some big problems with the job board at the moment are:\r\n\r\n- it’s very static, discussion is difficult to start\r\n- you don’t know the state of it, if it’s taken already\r\n- we don’t know if it’s done\r\n\r\nAs far as I know it’s possible to embed Discourse thread replies in a website. We could have a category in the Discourse called »Jobs« (you can’t create posts but will be led to the [job submission form](http://opensourcedesign.net/jobs/job-form/)), and one thread per job. Then on every job there’s the discussion thread below.\r\n@erlend-sh could you point us how to do that maybe? :)\r\n\r\nWe do have to require that the people have to register at Discourse though and be subscribed to the issue. But maybe that can be automated and will lead to growth.\r\n\r\ncc @jdittrich @simonv3 @belenbarrospena @janushead @guiguru @HeikoTietze @bnvk @evalica "
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337939399",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100#issuecomment-337939399",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 337939399,
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-19T15:11:59Z",
+        "updated_at": "2017-10-19T15:11:59Z",
+        "author_association": "OWNER",
+        "body": "I think so? I mean, by no means am I an expert on this."
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-19T15:12:00Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6738500668",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 925062,
+      "login": "jancborchardt",
+      "display_login": "jancborchardt",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/jancborchardt",
+      "avatar_url": "https://avatars.githubusercontent.com/u/925062?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 223356099,
+        "number": 100,
+        "title": "It should be possible to interact/comment on each job",
+        "user": {
+          "login": "jancborchardt",
+          "id": 925062,
+          "avatar_url": "https://avatars2.githubusercontent.com/u/925062?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jancborchardt",
+          "html_url": "https://github.com/jancborchardt",
+          "followers_url": "https://api.github.com/users/jancborchardt/followers",
+          "following_url": "https://api.github.com/users/jancborchardt/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jancborchardt/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jancborchardt/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jancborchardt/subscriptions",
+          "organizations_url": "https://api.github.com/users/jancborchardt/orgs",
+          "repos_url": "https://api.github.com/users/jancborchardt/repos",
+          "events_url": "https://api.github.com/users/jancborchardt/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jancborchardt/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 175013772,
+            "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/labels/enhancement",
+            "name": "enhancement",
+            "color": "84b6eb",
+            "default": true
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": {
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1",
+          "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/milestone/1",
+          "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1/labels",
+          "id": 2399335,
+          "number": 1,
+          "title": "Job Board Reboot",
+          "description": "We have a barely functioning (but has had some success) job board. We have lots of issues & ideas of how to improve it, let's try to get a lot of these hammered out and implemented sooner rather than later. \r\n\r\nI'm setting a goal to achieve this for OSCAL 2017",
+          "creator": {
+            "login": "bnvk",
+            "id": 48677,
+            "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/bnvk",
+            "html_url": "https://github.com/bnvk",
+            "followers_url": "https://api.github.com/users/bnvk/followers",
+            "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+            "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+            "organizations_url": "https://api.github.com/users/bnvk/orgs",
+            "repos_url": "https://api.github.com/users/bnvk/repos",
+            "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/bnvk/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 7,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2017-03-20T22:41:47Z",
+          "updated_at": "2017-04-25T14:19:14Z",
+          "due_on": "2017-05-13T07:00:00Z",
+          "closed_at": null
+        },
+        "comments": 6,
+        "created_at": "2017-04-21T11:25:54Z",
+        "updated_at": "2017-10-19T13:32:29Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Some big problems with the job board at the moment are:\r\n\r\n- it’s very static, discussion is difficult to start\r\n- you don’t know the state of it, if it’s taken already\r\n- we don’t know if it’s done\r\n\r\nAs far as I know it’s possible to embed Discourse thread replies in a website. We could have a category in the Discourse called »Jobs« (you can’t create posts but will be led to the [job submission form](http://opensourcedesign.net/jobs/job-form/)), and one thread per job. Then on every job there’s the discussion thread below.\r\n@erlend-sh could you point us how to do that maybe? :)\r\n\r\nWe do have to require that the people have to register at Discourse though and be subscribed to the issue. But maybe that can be automated and will lead to growth.\r\n\r\ncc @jdittrich @simonv3 @belenbarrospena @janushead @guiguru @HeikoTietze @bnvk @evalica "
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337908751",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100#issuecomment-337908751",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 337908751,
+        "user": {
+          "login": "jancborchardt",
+          "id": 925062,
+          "avatar_url": "https://avatars2.githubusercontent.com/u/925062?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jancborchardt",
+          "html_url": "https://github.com/jancborchardt",
+          "followers_url": "https://api.github.com/users/jancborchardt/followers",
+          "following_url": "https://api.github.com/users/jancborchardt/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jancborchardt/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jancborchardt/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jancborchardt/subscriptions",
+          "organizations_url": "https://api.github.com/users/jancborchardt/orgs",
+          "repos_url": "https://api.github.com/users/jancborchardt/repos",
+          "events_url": "https://api.github.com/users/jancborchardt/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jancborchardt/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-19T13:32:29Z",
+        "updated_at": "2017-10-19T13:32:29Z",
+        "author_association": "OWNER",
+        "body": "So we could have a unified feed and then a \"category\" attribute which would tell Discourse where to add the topic?"
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-19T13:32:29Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6738387784",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "ref": "simonv3-open-community",
+      "ref_type": "branch",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2017-10-19T13:10:02Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6738376262",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "ref": "truncated-titles-fix",
+      "ref_type": "branch",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2017-10-19T13:07:42Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6738374358",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "ref": "frontpagecleanup1",
+      "ref_type": "branch",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2017-10-19T13:07:18Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6738371439",
+    "type": "DeleteEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "ref": "edit-integration",
+      "ref_type": "branch",
+      "pusher_type": "user"
+    },
+    "public": true,
+    "created_at": "2017-10-19T13:06:40Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6738362460",
+    "type": "PushEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "push_id": 2062648916,
+      "size": 11,
+      "distinct_size": 2,
+      "ref": "refs/heads/dev",
+      "head": "d93d13427e8f6e13288c5e80e834dc31f98a4023",
+      "before": "e0a005ade994f836bce06cc4883f7c177a7dd638",
+      "commits": [
+        {
+          "sha": "f49ea79081ec83253ad30c53f11ae7455b3f630a",
+          "author": {
+            "email": "amrits3624@gmail.com",
+            "name": "Amrit Singh"
+          },
+          "message": "Added amrit-singh in people",
+          "distinct": false,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/f49ea79081ec83253ad30c53f11ae7455b3f630a"
+        },
+        {
+          "sha": "1470cfa07239b7215dbc446f7fdd39045a7f28c7",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "Edits of content and heading sizes",
+          "distinct": false,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/1470cfa07239b7215dbc446f7fdd39045a7f28c7"
+        },
+        {
+          "sha": "54d00c69401371124ba2d5bc74c376116500a236",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "Merge pull request #149 from SuperHaker/master\n\nAdded amrit-singh in people",
+          "distinct": false,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/54d00c69401371124ba2d5bc74c376116500a236"
+        },
+        {
+          "sha": "380fd26ef9b93029158d77533819598c7b72b652",
+          "author": {
+            "email": "simonv3@users.noreply.github.com",
+            "name": "Simon"
+          },
+          "message": "Fix goals link, remove trailing '/'",
+          "distinct": false,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/380fd26ef9b93029158d77533819598c7b72b652"
+        },
+        {
+          "sha": "4c25e2547e96c9c72f926a203656753ddd3aafeb",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "add jobs Compensation classes",
+          "distinct": false,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/4c25e2547e96c9c72f926a203656753ddd3aafeb"
+        },
+        {
+          "sha": "49deb982038c2e9182fd2b2d9876bb73365c4854",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "Merge branch 'master' of github.com:opensourcedesign/opensourcedesign.github.io into dev",
+          "distinct": false,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/49deb982038c2e9182fd2b2d9876bb73365c4854"
+        },
+        {
+          "sha": "abb8eeb37e78382242762d7e529478387bceaf24",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "fix mistake",
+          "distinct": false,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/abb8eeb37e78382242762d7e529478387bceaf24"
+        },
+        {
+          "sha": "9b52498194601b0be76ee236b2307e59af0c87cd",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "make Articles use only post layout, update scripts and gitignore",
+          "distinct": false,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/9b52498194601b0be76ee236b2307e59af0c87cd"
+        },
+        {
+          "sha": "77fadc207b61fa92bf8667fdce66b6583233ff94",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "jobs CSS tweak",
+          "distinct": false,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/77fadc207b61fa92bf8667fdce66b6583233ff94"
+        },
+        {
+          "sha": "d3dc011b8eca7cc14d77c9eecfc09c20e85b96c6",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "porting Jobs templates and pages to main repo",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/d3dc011b8eca7cc14d77c9eecfc09c20e85b96c6"
+        },
+        {
+          "sha": "d93d13427e8f6e13288c5e80e834dc31f98a4023",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "Port of Events layout and pages",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/d93d13427e8f6e13288c5e80e834dc31f98a4023"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-10-19T13:04:46Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6738330153",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 485583,
+      "login": "simonv3",
+      "display_login": "simonv3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/simonv3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/485583?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 223356099,
+        "number": 100,
+        "title": "It should be possible to interact/comment on each job",
+        "user": {
+          "login": "jancborchardt",
+          "id": 925062,
+          "avatar_url": "https://avatars2.githubusercontent.com/u/925062?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jancborchardt",
+          "html_url": "https://github.com/jancborchardt",
+          "followers_url": "https://api.github.com/users/jancborchardt/followers",
+          "following_url": "https://api.github.com/users/jancborchardt/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jancborchardt/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jancborchardt/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jancborchardt/subscriptions",
+          "organizations_url": "https://api.github.com/users/jancborchardt/orgs",
+          "repos_url": "https://api.github.com/users/jancborchardt/repos",
+          "events_url": "https://api.github.com/users/jancborchardt/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jancborchardt/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 175013772,
+            "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/labels/enhancement",
+            "name": "enhancement",
+            "color": "84b6eb",
+            "default": true
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": {
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1",
+          "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/milestone/1",
+          "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1/labels",
+          "id": 2399335,
+          "number": 1,
+          "title": "Job Board Reboot",
+          "description": "We have a barely functioning (but has had some success) job board. We have lots of issues & ideas of how to improve it, let's try to get a lot of these hammered out and implemented sooner rather than later. \r\n\r\nI'm setting a goal to achieve this for OSCAL 2017",
+          "creator": {
+            "login": "bnvk",
+            "id": 48677,
+            "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/bnvk",
+            "html_url": "https://github.com/bnvk",
+            "followers_url": "https://api.github.com/users/bnvk/followers",
+            "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+            "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+            "organizations_url": "https://api.github.com/users/bnvk/orgs",
+            "repos_url": "https://api.github.com/users/bnvk/repos",
+            "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/bnvk/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 7,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2017-03-20T22:41:47Z",
+          "updated_at": "2017-04-25T14:19:14Z",
+          "due_on": "2017-05-13T07:00:00Z",
+          "closed_at": null
+        },
+        "comments": 5,
+        "created_at": "2017-04-21T11:25:54Z",
+        "updated_at": "2017-10-19T12:58:08Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Some big problems with the job board at the moment are:\r\n\r\n- it’s very static, discussion is difficult to start\r\n- you don’t know the state of it, if it’s taken already\r\n- we don’t know if it’s done\r\n\r\nAs far as I know it’s possible to embed Discourse thread replies in a website. We could have a category in the Discourse called »Jobs« (you can’t create posts but will be led to the [job submission form](http://opensourcedesign.net/jobs/job-form/)), and one thread per job. Then on every job there’s the discussion thread below.\r\n@erlend-sh could you point us how to do that maybe? :)\r\n\r\nWe do have to require that the people have to register at Discourse though and be subscribed to the issue. But maybe that can be automated and will lead to growth.\r\n\r\ncc @jdittrich @simonv3 @belenbarrospena @janushead @guiguru @HeikoTietze @bnvk @evalica "
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337899534",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100#issuecomment-337899534",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 337899534,
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-19T12:58:08Z",
+        "updated_at": "2017-10-19T12:58:08Z",
+        "author_association": "OWNER",
+        "body": "Looks like a limitation on the Discourse side. There's only one input field for where to fetch RSS feed data from and it seems to apply to all embedded Discourse threads.\r\n\r\nIf we have separate repos we can't do this I think, but isn't it also fairly standard to provide an RSS feed of all updates from a site?"
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-19T12:58:08Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6738299304",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 223356099,
+        "number": 100,
+        "title": "It should be possible to interact/comment on each job",
+        "user": {
+          "login": "jancborchardt",
+          "id": 925062,
+          "avatar_url": "https://avatars2.githubusercontent.com/u/925062?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jancborchardt",
+          "html_url": "https://github.com/jancborchardt",
+          "followers_url": "https://api.github.com/users/jancborchardt/followers",
+          "following_url": "https://api.github.com/users/jancborchardt/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jancborchardt/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jancborchardt/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jancborchardt/subscriptions",
+          "organizations_url": "https://api.github.com/users/jancborchardt/orgs",
+          "repos_url": "https://api.github.com/users/jancborchardt/repos",
+          "events_url": "https://api.github.com/users/jancborchardt/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jancborchardt/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 175013772,
+            "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/labels/enhancement",
+            "name": "enhancement",
+            "color": "84b6eb",
+            "default": true
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": {
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1",
+          "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/milestone/1",
+          "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1/labels",
+          "id": 2399335,
+          "number": 1,
+          "title": "Job Board Reboot",
+          "description": "We have a barely functioning (but has had some success) job board. We have lots of issues & ideas of how to improve it, let's try to get a lot of these hammered out and implemented sooner rather than later. \r\n\r\nI'm setting a goal to achieve this for OSCAL 2017",
+          "creator": {
+            "login": "bnvk",
+            "id": 48677,
+            "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/bnvk",
+            "html_url": "https://github.com/bnvk",
+            "followers_url": "https://api.github.com/users/bnvk/followers",
+            "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+            "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+            "organizations_url": "https://api.github.com/users/bnvk/orgs",
+            "repos_url": "https://api.github.com/users/bnvk/repos",
+            "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/bnvk/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 7,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2017-03-20T22:41:47Z",
+          "updated_at": "2017-04-25T14:19:14Z",
+          "due_on": "2017-05-13T07:00:00Z",
+          "closed_at": null
+        },
+        "comments": 4,
+        "created_at": "2017-04-21T11:25:54Z",
+        "updated_at": "2017-10-19T12:51:36Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Some big problems with the job board at the moment are:\r\n\r\n- it’s very static, discussion is difficult to start\r\n- you don’t know the state of it, if it’s taken already\r\n- we don’t know if it’s done\r\n\r\nAs far as I know it’s possible to embed Discourse thread replies in a website. We could have a category in the Discourse called »Jobs« (you can’t create posts but will be led to the [job submission form](http://opensourcedesign.net/jobs/job-form/)), and one thread per job. Then on every job there’s the discussion thread below.\r\n@erlend-sh could you point us how to do that maybe? :)\r\n\r\nWe do have to require that the people have to register at Discourse though and be subscribed to the issue. But maybe that can be automated and will lead to growth.\r\n\r\ncc @jdittrich @simonv3 @belenbarrospena @janushead @guiguru @HeikoTietze @bnvk @evalica "
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337897639",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100#issuecomment-337897639",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 337897639,
+        "user": {
+          "login": "bnvk",
+          "id": 48677,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bnvk",
+          "html_url": "https://github.com/bnvk",
+          "followers_url": "https://api.github.com/users/bnvk/followers",
+          "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+          "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+          "organizations_url": "https://api.github.com/users/bnvk/orgs",
+          "repos_url": "https://api.github.com/users/bnvk/repos",
+          "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/bnvk/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-19T12:51:36Z",
+        "updated_at": "2017-10-19T12:51:36Z",
+        "author_association": "OWNER",
+        "body": "> we can only do it for jobs I think, not for, say, articles\r\n\r\nWhy is this? We can (and should / am working towards) have multiple RSS feeds."
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-19T12:51:36Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6738270208",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/151",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/151/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/151/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/151/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/151",
+        "id": 266829227,
+        "number": 151,
+        "title": "Replace hardcoded URLs to site in pages and templates",
+        "user": {
+          "login": "bnvk",
+          "id": 48677,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bnvk",
+          "html_url": "https://github.com/bnvk",
+          "followers_url": "https://api.github.com/users/bnvk/followers",
+          "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+          "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+          "organizations_url": "https://api.github.com/users/bnvk/orgs",
+          "repos_url": "https://api.github.com/users/bnvk/repos",
+          "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/bnvk/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-10-19T12:45:10Z",
+        "updated_at": "2017-10-19T12:45:10Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Currently, in throughout the website Jekyll templates and pages, the website URL\r\n\r\n```\r\nhttp://opensourcedesign.net\r\n```\r\n\r\nIs hardcoded. We should make use of Jekyll variables, so as to make developing locally, a stagging server, etc... all work well. Thus, we should replace that value with \r\n\r\n```\r\n{{ site.url }}\r\n```\r\n\r\nWhich then gets drawn from [_config.yml](https://github.com/opensourcedesign/opensourcedesign.github.io/blob/master/_config.yml) values. "
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-19T12:45:11Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6738047509",
+    "type": "PushEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "push_id": 2062482093,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "77fadc207b61fa92bf8667fdce66b6583233ff94",
+      "before": "9b52498194601b0be76ee236b2307e59af0c87cd",
+      "commits": [
+        {
+          "sha": "77fadc207b61fa92bf8667fdce66b6583233ff94",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "jobs CSS tweak",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/77fadc207b61fa92bf8667fdce66b6583233ff94"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-10-19T11:52:03Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6737762262",
+    "type": "PushEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "push_id": 2062332162,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "9b52498194601b0be76ee236b2307e59af0c87cd",
+      "before": "abb8eeb37e78382242762d7e529478387bceaf24",
+      "commits": [
+        {
+          "sha": "9b52498194601b0be76ee236b2307e59af0c87cd",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "make Articles use only post layout, update scripts and gitignore",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/9b52498194601b0be76ee236b2307e59af0c87cd"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-10-19T10:38:03Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6733270690",
+    "type": "PushEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "push_id": 2060027891,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "abb8eeb37e78382242762d7e529478387bceaf24",
+      "before": "49deb982038c2e9182fd2b2d9876bb73365c4854",
+      "commits": [
+        {
+          "sha": "abb8eeb37e78382242762d7e529478387bceaf24",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "fix mistake",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/abb8eeb37e78382242762d7e529478387bceaf24"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-10-18T14:21:41Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6732931659",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 485583,
+      "login": "simonv3",
+      "display_login": "simonv3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/simonv3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/485583?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 223356099,
+        "number": 100,
+        "title": "It should be possible to interact/comment on each job",
+        "user": {
+          "login": "jancborchardt",
+          "id": 925062,
+          "avatar_url": "https://avatars2.githubusercontent.com/u/925062?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jancborchardt",
+          "html_url": "https://github.com/jancborchardt",
+          "followers_url": "https://api.github.com/users/jancborchardt/followers",
+          "following_url": "https://api.github.com/users/jancborchardt/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jancborchardt/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jancborchardt/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jancborchardt/subscriptions",
+          "organizations_url": "https://api.github.com/users/jancborchardt/orgs",
+          "repos_url": "https://api.github.com/users/jancborchardt/repos",
+          "events_url": "https://api.github.com/users/jancborchardt/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jancborchardt/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 175013772,
+            "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/labels/enhancement",
+            "name": "enhancement",
+            "color": "84b6eb",
+            "default": true
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": {
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1",
+          "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/milestone/1",
+          "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1/labels",
+          "id": 2399335,
+          "number": 1,
+          "title": "Job Board Reboot",
+          "description": "We have a barely functioning (but has had some success) job board. We have lots of issues & ideas of how to improve it, let's try to get a lot of these hammered out and implemented sooner rather than later. \r\n\r\nI'm setting a goal to achieve this for OSCAL 2017",
+          "creator": {
+            "login": "bnvk",
+            "id": 48677,
+            "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/bnvk",
+            "html_url": "https://github.com/bnvk",
+            "followers_url": "https://api.github.com/users/bnvk/followers",
+            "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+            "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+            "organizations_url": "https://api.github.com/users/bnvk/orgs",
+            "repos_url": "https://api.github.com/users/bnvk/repos",
+            "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/bnvk/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 7,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2017-03-20T22:41:47Z",
+          "updated_at": "2017-04-25T14:19:14Z",
+          "due_on": "2017-05-13T07:00:00Z",
+          "closed_at": null
+        },
+        "comments": 3,
+        "created_at": "2017-04-21T11:25:54Z",
+        "updated_at": "2017-10-18T13:20:18Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Some big problems with the job board at the moment are:\r\n\r\n- it’s very static, discussion is difficult to start\r\n- you don’t know the state of it, if it’s taken already\r\n- we don’t know if it’s done\r\n\r\nAs far as I know it’s possible to embed Discourse thread replies in a website. We could have a category in the Discourse called »Jobs« (you can’t create posts but will be led to the [job submission form](http://opensourcedesign.net/jobs/job-form/)), and one thread per job. Then on every job there’s the discussion thread below.\r\n@erlend-sh could you point us how to do that maybe? :)\r\n\r\nWe do have to require that the people have to register at Discourse though and be subscribed to the issue. But maybe that can be automated and will lead to growth.\r\n\r\ncc @jdittrich @simonv3 @belenbarrospena @janushead @guiguru @HeikoTietze @bnvk @evalica "
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337587907",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100#issuecomment-337587907",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 337587907,
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-18T13:20:18Z",
+        "updated_at": "2017-10-18T13:20:18Z",
+        "author_association": "OWNER",
+        "body": "yeah, the ID issue probably happened because I have since deleted and created that thing a couple of times for testing purposes. \r\n\r\nThis is actually pretty incredible functionality from Discourse. We can set it so that stuff gets automatically gets created when Discourse polls the feed.xml for the jobs (in which case we can only do it for jobs I think, not for, say, articles), or that it gets created when someone views the page (as is the case now). \r\n\r\nAs some of the old projects gets viewed this might take some curation on the forum, hiding posts etc. "
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T13:20:18Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6732307371",
+    "type": "PushEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "push_id": 2059528651,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/master",
+      "head": "49deb982038c2e9182fd2b2d9876bb73365c4854",
+      "before": "380fd26ef9b93029158d77533819598c7b72b652",
+      "commits": [
+        {
+          "sha": "4c25e2547e96c9c72f926a203656753ddd3aafeb",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "add jobs Compensation classes",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/4c25e2547e96c9c72f926a203656753ddd3aafeb"
+        },
+        {
+          "sha": "49deb982038c2e9182fd2b2d9876bb73365c4854",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "Merge branch 'master' of github.com:opensourcedesign/opensourcedesign.github.io into dev",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/49deb982038c2e9182fd2b2d9876bb73365c4854"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-10-18T10:57:33Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6732231953",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 485583,
+      "login": "simonv3",
+      "display_login": "simonv3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/simonv3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/485583?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/148",
+        "id": 266383485,
+        "number": 148,
+        "title": "Styling on job form thank you page is broken",
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2017-10-18T07:19:25Z",
+        "updated_at": "2017-10-18T10:38:33Z",
+        "closed_at": "2017-10-18T09:14:11Z",
+        "author_association": "OWNER",
+        "body": "Probably because the bootstrap stuff was moved recently?\r\n\r\nhttp://opensourcedesign.net/jobs/thank-you/\r\n\r\nhttps://github.com/opensourcedesign/jobs/blob/master/thankyou.html\r\n\r\n"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337546385",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/148#issuecomment-337546385",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148",
+        "id": 337546385,
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-18T10:38:33Z",
+        "updated_at": "2017-10-18T10:38:33Z",
+        "author_association": "OWNER",
+        "body": "ah cool! possibly because it was moved over from a stand-alone repo. "
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T10:38:33Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6732199750",
+    "type": "PushEvent",
+    "actor": {
+      "id": 485583,
+      "login": "simonv3",
+      "display_login": "simonv3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/simonv3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/485583?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "push_id": 2059472880,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "380fd26ef9b93029158d77533819598c7b72b652",
+      "before": "54d00c69401371124ba2d5bc74c376116500a236",
+      "commits": [
+        {
+          "sha": "380fd26ef9b93029158d77533819598c7b72b652",
+          "author": {
+            "email": "simonv3@users.noreply.github.com",
+            "name": "Simon"
+          },
+          "message": "Fix goals link, remove trailing '/'",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/380fd26ef9b93029158d77533819598c7b72b652"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-10-18T10:30:32Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6732174353",
+    "type": "PushEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "push_id": 2059459717,
+      "size": 2,
+      "distinct_size": 2,
+      "ref": "refs/heads/master",
+      "head": "54d00c69401371124ba2d5bc74c376116500a236",
+      "before": "1470cfa07239b7215dbc446f7fdd39045a7f28c7",
+      "commits": [
+        {
+          "sha": "f49ea79081ec83253ad30c53f11ae7455b3f630a",
+          "author": {
+            "email": "amrits3624@gmail.com",
+            "name": "Amrit Singh"
+          },
+          "message": "Added amrit-singh in people",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/f49ea79081ec83253ad30c53f11ae7455b3f630a"
+        },
+        {
+          "sha": "54d00c69401371124ba2d5bc74c376116500a236",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "Merge pull request #149 from SuperHaker/master\n\nAdded amrit-singh in people",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/54d00c69401371124ba2d5bc74c376116500a236"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-10-18T10:24:30Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6732174241",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "closed",
+      "number": 149,
+      "pull_request": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149",
+        "id": 147253549,
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/pull/149",
+        "diff_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/pull/149.diff",
+        "patch_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/pull/149.patch",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/149",
+        "number": 149,
+        "state": "closed",
+        "locked": false,
+        "title": "Added amrit-singh in people",
+        "user": {
+          "login": "SuperHaker",
+          "id": 16765805,
+          "avatar_url": "https://avatars0.githubusercontent.com/u/16765805?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/SuperHaker",
+          "html_url": "https://github.com/SuperHaker",
+          "followers_url": "https://api.github.com/users/SuperHaker/followers",
+          "following_url": "https://api.github.com/users/SuperHaker/following{/other_user}",
+          "gists_url": "https://api.github.com/users/SuperHaker/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/SuperHaker/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/SuperHaker/subscriptions",
+          "organizations_url": "https://api.github.com/users/SuperHaker/orgs",
+          "repos_url": "https://api.github.com/users/SuperHaker/repos",
+          "events_url": "https://api.github.com/users/SuperHaker/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/SuperHaker/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2017-10-18T09:43:22Z",
+        "updated_at": "2017-10-18T10:24:28Z",
+        "closed_at": "2017-10-18T10:24:28Z",
+        "merged_at": "2017-10-18T10:24:28Z",
+        "merge_commit_sha": "54d00c69401371124ba2d5bc74c376116500a236",
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "requested_reviewers": [
+
+        ],
+        "milestone": null,
+        "commits_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149/commits",
+        "review_comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149/comments",
+        "review_comment_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/comments{/number}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/149/comments",
+        "statuses_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/statuses/f49ea79081ec83253ad30c53f11ae7455b3f630a",
+        "head": {
+          "label": "SuperHaker:master",
+          "ref": "master",
+          "sha": "f49ea79081ec83253ad30c53f11ae7455b3f630a",
+          "user": {
+            "login": "SuperHaker",
+            "id": 16765805,
+            "avatar_url": "https://avatars0.githubusercontent.com/u/16765805?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/SuperHaker",
+            "html_url": "https://github.com/SuperHaker",
+            "followers_url": "https://api.github.com/users/SuperHaker/followers",
+            "following_url": "https://api.github.com/users/SuperHaker/following{/other_user}",
+            "gists_url": "https://api.github.com/users/SuperHaker/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/SuperHaker/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/SuperHaker/subscriptions",
+            "organizations_url": "https://api.github.com/users/SuperHaker/orgs",
+            "repos_url": "https://api.github.com/users/SuperHaker/repos",
+            "events_url": "https://api.github.com/users/SuperHaker/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/SuperHaker/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 107387186,
+            "name": "opensourcedesign.github.io",
+            "full_name": "SuperHaker/opensourcedesign.github.io",
+            "owner": {
+              "login": "SuperHaker",
+              "id": 16765805,
+              "avatar_url": "https://avatars0.githubusercontent.com/u/16765805?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/SuperHaker",
+              "html_url": "https://github.com/SuperHaker",
+              "followers_url": "https://api.github.com/users/SuperHaker/followers",
+              "following_url": "https://api.github.com/users/SuperHaker/following{/other_user}",
+              "gists_url": "https://api.github.com/users/SuperHaker/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/SuperHaker/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/SuperHaker/subscriptions",
+              "organizations_url": "https://api.github.com/users/SuperHaker/orgs",
+              "repos_url": "https://api.github.com/users/SuperHaker/repos",
+              "events_url": "https://api.github.com/users/SuperHaker/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/SuperHaker/received_events",
+              "type": "User",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/SuperHaker/opensourcedesign.github.io",
+            "description": ":art: :computer: :smile: source code of our website",
+            "fork": true,
+            "url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io",
+            "forks_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/forks",
+            "keys_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/teams",
+            "hooks_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/hooks",
+            "issue_events_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/events",
+            "assignees_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/tags",
+            "blobs_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/languages",
+            "stargazers_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/stargazers",
+            "contributors_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/contributors",
+            "subscribers_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/subscribers",
+            "subscription_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/subscription",
+            "commits_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/merges",
+            "archive_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/downloads",
+            "issues_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/labels{/name}",
+            "releases_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/deployments",
+            "created_at": "2017-10-18T09:32:47Z",
+            "updated_at": "2017-10-18T09:32:49Z",
+            "pushed_at": "2017-10-18T09:42:34Z",
+            "git_url": "git://github.com/SuperHaker/opensourcedesign.github.io.git",
+            "ssh_url": "git@github.com:SuperHaker/opensourcedesign.github.io.git",
+            "clone_url": "https://github.com/SuperHaker/opensourcedesign.github.io.git",
+            "svn_url": "https://github.com/SuperHaker/opensourcedesign.github.io",
+            "homepage": "http://opensourcedesign.net",
+            "size": 19637,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "forks_count": 0,
+            "mirror_url": null,
+            "open_issues_count": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "opensourcedesign:master",
+          "ref": "master",
+          "sha": "e0a005ade994f836bce06cc4883f7c177a7dd638",
+          "user": {
+            "login": "opensourcedesign",
+            "id": 4183553,
+            "avatar_url": "https://avatars0.githubusercontent.com/u/4183553?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/opensourcedesign",
+            "html_url": "https://github.com/opensourcedesign",
+            "followers_url": "https://api.github.com/users/opensourcedesign/followers",
+            "following_url": "https://api.github.com/users/opensourcedesign/following{/other_user}",
+            "gists_url": "https://api.github.com/users/opensourcedesign/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/opensourcedesign/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/opensourcedesign/subscriptions",
+            "organizations_url": "https://api.github.com/users/opensourcedesign/orgs",
+            "repos_url": "https://api.github.com/users/opensourcedesign/repos",
+            "events_url": "https://api.github.com/users/opensourcedesign/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/opensourcedesign/received_events",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 30500296,
+            "name": "opensourcedesign.github.io",
+            "full_name": "opensourcedesign/opensourcedesign.github.io",
+            "owner": {
+              "login": "opensourcedesign",
+              "id": 4183553,
+              "avatar_url": "https://avatars0.githubusercontent.com/u/4183553?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/opensourcedesign",
+              "html_url": "https://github.com/opensourcedesign",
+              "followers_url": "https://api.github.com/users/opensourcedesign/followers",
+              "following_url": "https://api.github.com/users/opensourcedesign/following{/other_user}",
+              "gists_url": "https://api.github.com/users/opensourcedesign/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/opensourcedesign/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/opensourcedesign/subscriptions",
+              "organizations_url": "https://api.github.com/users/opensourcedesign/orgs",
+              "repos_url": "https://api.github.com/users/opensourcedesign/repos",
+              "events_url": "https://api.github.com/users/opensourcedesign/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/opensourcedesign/received_events",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io",
+            "description": ":art: :computer: :smile: source code of our website",
+            "fork": false,
+            "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+            "forks_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/forks",
+            "keys_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/teams",
+            "hooks_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/hooks",
+            "issue_events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/events",
+            "assignees_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/tags",
+            "blobs_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/languages",
+            "stargazers_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/stargazers",
+            "contributors_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/contributors",
+            "subscribers_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/subscribers",
+            "subscription_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/subscription",
+            "commits_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/merges",
+            "archive_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/downloads",
+            "issues_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/labels{/name}",
+            "releases_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/deployments",
+            "created_at": "2015-02-08T18:12:40Z",
+            "updated_at": "2017-10-16T14:07:44Z",
+            "pushed_at": "2017-10-18T10:24:28Z",
+            "git_url": "git://github.com/opensourcedesign/opensourcedesign.github.io.git",
+            "ssh_url": "git@github.com:opensourcedesign/opensourcedesign.github.io.git",
+            "clone_url": "https://github.com/opensourcedesign/opensourcedesign.github.io.git",
+            "svn_url": "https://github.com/opensourcedesign/opensourcedesign.github.io",
+            "homepage": "http://opensourcedesign.net",
+            "size": 19637,
+            "stargazers_count": 57,
+            "watchers_count": 57,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": true,
+            "forks_count": 27,
+            "mirror_url": null,
+            "open_issues_count": 39,
+            "forks": 27,
+            "open_issues": 39,
+            "watchers": 57,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149"
+          },
+          "html": {
+            "href": "https://github.com/opensourcedesign/opensourcedesign.github.io/pull/149"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/149"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/149/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/statuses/f49ea79081ec83253ad30c53f11ae7455b3f630a"
+          }
+        },
+        "author_association": "NONE",
+        "merged": true,
+        "mergeable": null,
+        "rebaseable": null,
+        "mergeable_state": "unknown",
+        "merged_by": {
+          "login": "bnvk",
+          "id": 48677,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bnvk",
+          "html_url": "https://github.com/bnvk",
+          "followers_url": "https://api.github.com/users/bnvk/followers",
+          "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+          "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+          "organizations_url": "https://api.github.com/users/bnvk/orgs",
+          "repos_url": "https://api.github.com/users/bnvk/repos",
+          "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/bnvk/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "comments": 0,
+        "review_comments": 0,
+        "maintainer_can_modify": false,
+        "commits": 1,
+        "additions": 13,
+        "deletions": 0,
+        "changed_files": 1
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T10:24:29Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6732133647",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/146",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/146/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/146/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/146/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/146",
+        "id": 266212531,
+        "number": 146,
+        "title": "Specify certain pages as \"Uneditable\"",
+        "user": {
+          "login": "bnvk",
+          "id": 48677,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bnvk",
+          "html_url": "https://github.com/bnvk",
+          "followers_url": "https://api.github.com/users/bnvk/followers",
+          "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+          "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+          "organizations_url": "https://api.github.com/users/bnvk/orgs",
+          "repos_url": "https://api.github.com/users/bnvk/repos",
+          "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/bnvk/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 512946890,
+            "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/labels/jekyll",
+            "name": "jekyll",
+            "color": "e99695",
+            "default": false
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2017-10-17T17:26:52Z",
+        "updated_at": "2017-10-18T10:14:49Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "With the integration of the edit page buttons (as seen here), which is now on each page...\r\n\r\n![osd-edit-source-links-2](https://user-images.githubusercontent.com/48677/31679068-501341f8-b370-11e7-8b20-62fd4bbae3de.png)\r\n\r\n...certain pages probably should not be editable via the [Prose editor](https://edit.opensourcedesign.net) as they will have HTML, Jekyll logic, and can seriously break the site if they are edited wrong. Some examples of these pages are:\r\n\r\n- 404.html\r\n- index.html\r\n- articles.html\r\n\r\nThis should be simple enough by adding the file to the Prose config excludes, and then a Jekyll var in each page, that either displays or hides the `Edit this page` link."
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337538972",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/146#issuecomment-337538972",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/146",
+        "id": 337538972,
+        "user": {
+          "login": "bnvk",
+          "id": 48677,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bnvk",
+          "html_url": "https://github.com/bnvk",
+          "followers_url": "https://api.github.com/users/bnvk/followers",
+          "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+          "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+          "organizations_url": "https://api.github.com/users/bnvk/orgs",
+          "repos_url": "https://api.github.com/users/bnvk/repos",
+          "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/bnvk/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-18T10:14:49Z",
+        "updated_at": "2017-10-18T10:14:49Z",
+        "author_association": "OWNER",
+        "body": "@evalica sure, I don't see a strong argument for or against CSS class vs. just not displaying the HTML in the template. Regardless, we need to add value to FrontMatter of \"uneditable\" pages."
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T10:14:49Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6732115611",
+    "type": "PushEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "push_id": 2059429295,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/master",
+      "head": "1470cfa07239b7215dbc446f7fdd39045a7f28c7",
+      "before": "e0a005ade994f836bce06cc4883f7c177a7dd638",
+      "commits": [
+        {
+          "sha": "1470cfa07239b7215dbc446f7fdd39045a7f28c7",
+          "author": {
+            "email": "hi@brennannovak.com",
+            "name": "Brennan Novak"
+          },
+          "message": "Edits of content and heading sizes",
+          "distinct": true,
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits/1470cfa07239b7215dbc446f7fdd39045a7f28c7"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2017-10-18T10:10:34Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6731990970",
+    "type": "PullRequestEvent",
+    "actor": {
+      "id": 16765805,
+      "login": "SuperHaker",
+      "display_login": "SuperHaker",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperHaker",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16765805?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "opened",
+      "number": 149,
+      "pull_request": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149",
+        "id": 147253549,
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/pull/149",
+        "diff_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/pull/149.diff",
+        "patch_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/pull/149.patch",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/149",
+        "number": 149,
+        "state": "open",
+        "locked": false,
+        "title": "Added amrit-singh in people",
+        "user": {
+          "login": "SuperHaker",
+          "id": 16765805,
+          "avatar_url": "https://avatars0.githubusercontent.com/u/16765805?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/SuperHaker",
+          "html_url": "https://github.com/SuperHaker",
+          "followers_url": "https://api.github.com/users/SuperHaker/followers",
+          "following_url": "https://api.github.com/users/SuperHaker/following{/other_user}",
+          "gists_url": "https://api.github.com/users/SuperHaker/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/SuperHaker/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/SuperHaker/subscriptions",
+          "organizations_url": "https://api.github.com/users/SuperHaker/orgs",
+          "repos_url": "https://api.github.com/users/SuperHaker/repos",
+          "events_url": "https://api.github.com/users/SuperHaker/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/SuperHaker/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2017-10-18T09:43:22Z",
+        "updated_at": "2017-10-18T09:43:22Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": null,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "requested_reviewers": [
+
+        ],
+        "milestone": null,
+        "commits_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149/commits",
+        "review_comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149/comments",
+        "review_comment_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/comments{/number}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/149/comments",
+        "statuses_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/statuses/f49ea79081ec83253ad30c53f11ae7455b3f630a",
+        "head": {
+          "label": "SuperHaker:master",
+          "ref": "master",
+          "sha": "f49ea79081ec83253ad30c53f11ae7455b3f630a",
+          "user": {
+            "login": "SuperHaker",
+            "id": 16765805,
+            "avatar_url": "https://avatars0.githubusercontent.com/u/16765805?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/SuperHaker",
+            "html_url": "https://github.com/SuperHaker",
+            "followers_url": "https://api.github.com/users/SuperHaker/followers",
+            "following_url": "https://api.github.com/users/SuperHaker/following{/other_user}",
+            "gists_url": "https://api.github.com/users/SuperHaker/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/SuperHaker/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/SuperHaker/subscriptions",
+            "organizations_url": "https://api.github.com/users/SuperHaker/orgs",
+            "repos_url": "https://api.github.com/users/SuperHaker/repos",
+            "events_url": "https://api.github.com/users/SuperHaker/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/SuperHaker/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 107387186,
+            "name": "opensourcedesign.github.io",
+            "full_name": "SuperHaker/opensourcedesign.github.io",
+            "owner": {
+              "login": "SuperHaker",
+              "id": 16765805,
+              "avatar_url": "https://avatars0.githubusercontent.com/u/16765805?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/SuperHaker",
+              "html_url": "https://github.com/SuperHaker",
+              "followers_url": "https://api.github.com/users/SuperHaker/followers",
+              "following_url": "https://api.github.com/users/SuperHaker/following{/other_user}",
+              "gists_url": "https://api.github.com/users/SuperHaker/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/SuperHaker/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/SuperHaker/subscriptions",
+              "organizations_url": "https://api.github.com/users/SuperHaker/orgs",
+              "repos_url": "https://api.github.com/users/SuperHaker/repos",
+              "events_url": "https://api.github.com/users/SuperHaker/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/SuperHaker/received_events",
+              "type": "User",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/SuperHaker/opensourcedesign.github.io",
+            "description": ":art: :computer: :smile: source code of our website",
+            "fork": true,
+            "url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io",
+            "forks_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/forks",
+            "keys_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/teams",
+            "hooks_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/hooks",
+            "issue_events_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/events",
+            "assignees_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/tags",
+            "blobs_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/languages",
+            "stargazers_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/stargazers",
+            "contributors_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/contributors",
+            "subscribers_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/subscribers",
+            "subscription_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/subscription",
+            "commits_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/merges",
+            "archive_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/downloads",
+            "issues_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/labels{/name}",
+            "releases_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/deployments",
+            "created_at": "2017-10-18T09:32:47Z",
+            "updated_at": "2017-10-18T09:32:49Z",
+            "pushed_at": "2017-10-18T09:42:34Z",
+            "git_url": "git://github.com/SuperHaker/opensourcedesign.github.io.git",
+            "ssh_url": "git@github.com:SuperHaker/opensourcedesign.github.io.git",
+            "clone_url": "https://github.com/SuperHaker/opensourcedesign.github.io.git",
+            "svn_url": "https://github.com/SuperHaker/opensourcedesign.github.io",
+            "homepage": "http://opensourcedesign.net",
+            "size": 19637,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "forks_count": 0,
+            "mirror_url": null,
+            "open_issues_count": 0,
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "opensourcedesign:master",
+          "ref": "master",
+          "sha": "e0a005ade994f836bce06cc4883f7c177a7dd638",
+          "user": {
+            "login": "opensourcedesign",
+            "id": 4183553,
+            "avatar_url": "https://avatars0.githubusercontent.com/u/4183553?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/opensourcedesign",
+            "html_url": "https://github.com/opensourcedesign",
+            "followers_url": "https://api.github.com/users/opensourcedesign/followers",
+            "following_url": "https://api.github.com/users/opensourcedesign/following{/other_user}",
+            "gists_url": "https://api.github.com/users/opensourcedesign/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/opensourcedesign/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/opensourcedesign/subscriptions",
+            "organizations_url": "https://api.github.com/users/opensourcedesign/orgs",
+            "repos_url": "https://api.github.com/users/opensourcedesign/repos",
+            "events_url": "https://api.github.com/users/opensourcedesign/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/opensourcedesign/received_events",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 30500296,
+            "name": "opensourcedesign.github.io",
+            "full_name": "opensourcedesign/opensourcedesign.github.io",
+            "owner": {
+              "login": "opensourcedesign",
+              "id": 4183553,
+              "avatar_url": "https://avatars0.githubusercontent.com/u/4183553?v=4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/opensourcedesign",
+              "html_url": "https://github.com/opensourcedesign",
+              "followers_url": "https://api.github.com/users/opensourcedesign/followers",
+              "following_url": "https://api.github.com/users/opensourcedesign/following{/other_user}",
+              "gists_url": "https://api.github.com/users/opensourcedesign/gists{/gist_id}",
+              "starred_url": "https://api.github.com/users/opensourcedesign/starred{/owner}{/repo}",
+              "subscriptions_url": "https://api.github.com/users/opensourcedesign/subscriptions",
+              "organizations_url": "https://api.github.com/users/opensourcedesign/orgs",
+              "repos_url": "https://api.github.com/users/opensourcedesign/repos",
+              "events_url": "https://api.github.com/users/opensourcedesign/events{/privacy}",
+              "received_events_url": "https://api.github.com/users/opensourcedesign/received_events",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "private": false,
+            "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io",
+            "description": ":art: :computer: :smile: source code of our website",
+            "fork": false,
+            "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+            "forks_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/forks",
+            "keys_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/keys{/key_id}",
+            "collaborators_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/collaborators{/collaborator}",
+            "teams_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/teams",
+            "hooks_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/hooks",
+            "issue_events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/events{/number}",
+            "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/events",
+            "assignees_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/assignees{/user}",
+            "branches_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/branches{/branch}",
+            "tags_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/tags",
+            "blobs_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/git/blobs{/sha}",
+            "git_tags_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/git/tags{/sha}",
+            "git_refs_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/git/refs{/sha}",
+            "trees_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/git/trees{/sha}",
+            "statuses_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/statuses/{sha}",
+            "languages_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/languages",
+            "stargazers_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/stargazers",
+            "contributors_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/contributors",
+            "subscribers_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/subscribers",
+            "subscription_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/subscription",
+            "commits_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/commits{/sha}",
+            "git_commits_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/git/commits{/sha}",
+            "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/comments{/number}",
+            "issue_comment_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments{/number}",
+            "contents_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/contents/{+path}",
+            "compare_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/compare/{base}...{head}",
+            "merges_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/merges",
+            "archive_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/{archive_format}{/ref}",
+            "downloads_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/downloads",
+            "issues_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues{/number}",
+            "pulls_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls{/number}",
+            "milestones_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones{/number}",
+            "notifications_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/notifications{?since,all,participating}",
+            "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/labels{/name}",
+            "releases_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/releases{/id}",
+            "deployments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/deployments",
+            "created_at": "2015-02-08T18:12:40Z",
+            "updated_at": "2017-10-16T14:07:44Z",
+            "pushed_at": "2017-10-17T17:54:26Z",
+            "git_url": "git://github.com/opensourcedesign/opensourcedesign.github.io.git",
+            "ssh_url": "git@github.com:opensourcedesign/opensourcedesign.github.io.git",
+            "clone_url": "https://github.com/opensourcedesign/opensourcedesign.github.io.git",
+            "svn_url": "https://github.com/opensourcedesign/opensourcedesign.github.io",
+            "homepage": "http://opensourcedesign.net",
+            "size": 19637,
+            "stargazers_count": 57,
+            "watchers_count": 57,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": true,
+            "forks_count": 27,
+            "mirror_url": null,
+            "open_issues_count": 40,
+            "forks": 27,
+            "open_issues": 40,
+            "watchers": 57,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149"
+          },
+          "html": {
+            "href": "https://github.com/opensourcedesign/opensourcedesign.github.io/pull/149"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/149"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/149/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/pulls/149/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/statuses/f49ea79081ec83253ad30c53f11ae7455b3f630a"
+          }
+        },
+        "author_association": "NONE",
+        "merged": false,
+        "mergeable": null,
+        "rebaseable": null,
+        "mergeable_state": "unknown",
+        "merged_by": null,
+        "comments": 0,
+        "review_comments": 0,
+        "maintainer_can_modify": true,
+        "commits": 1,
+        "additions": 13,
+        "deletions": 0,
+        "changed_files": 1
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T09:43:23Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6731987325",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 223356099,
+        "number": 100,
+        "title": "It should be possible to interact/comment on each job",
+        "user": {
+          "login": "jancborchardt",
+          "id": 925062,
+          "avatar_url": "https://avatars2.githubusercontent.com/u/925062?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jancborchardt",
+          "html_url": "https://github.com/jancborchardt",
+          "followers_url": "https://api.github.com/users/jancborchardt/followers",
+          "following_url": "https://api.github.com/users/jancborchardt/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jancborchardt/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jancborchardt/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jancborchardt/subscriptions",
+          "organizations_url": "https://api.github.com/users/jancborchardt/orgs",
+          "repos_url": "https://api.github.com/users/jancborchardt/repos",
+          "events_url": "https://api.github.com/users/jancborchardt/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jancborchardt/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 175013772,
+            "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/labels/enhancement",
+            "name": "enhancement",
+            "color": "84b6eb",
+            "default": true
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": {
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1",
+          "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/milestone/1",
+          "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1/labels",
+          "id": 2399335,
+          "number": 1,
+          "title": "Job Board Reboot",
+          "description": "We have a barely functioning (but has had some success) job board. We have lots of issues & ideas of how to improve it, let's try to get a lot of these hammered out and implemented sooner rather than later. \r\n\r\nI'm setting a goal to achieve this for OSCAL 2017",
+          "creator": {
+            "login": "bnvk",
+            "id": 48677,
+            "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/bnvk",
+            "html_url": "https://github.com/bnvk",
+            "followers_url": "https://api.github.com/users/bnvk/followers",
+            "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+            "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+            "organizations_url": "https://api.github.com/users/bnvk/orgs",
+            "repos_url": "https://api.github.com/users/bnvk/repos",
+            "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/bnvk/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 7,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2017-03-20T22:41:47Z",
+          "updated_at": "2017-04-25T14:19:14Z",
+          "due_on": "2017-05-13T07:00:00Z",
+          "closed_at": null
+        },
+        "comments": 3,
+        "created_at": "2017-04-21T11:25:54Z",
+        "updated_at": "2017-10-18T09:42:32Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Some big problems with the job board at the moment are:\r\n\r\n- it’s very static, discussion is difficult to start\r\n- you don’t know the state of it, if it’s taken already\r\n- we don’t know if it’s done\r\n\r\nAs far as I know it’s possible to embed Discourse thread replies in a website. We could have a category in the Discourse called »Jobs« (you can’t create posts but will be led to the [job submission form](http://opensourcedesign.net/jobs/job-form/)), and one thread per job. Then on every job there’s the discussion thread below.\r\n@erlend-sh could you point us how to do that maybe? :)\r\n\r\nWe do have to require that the people have to register at Discourse though and be subscribed to the issue. But maybe that can be automated and will lead to growth.\r\n\r\ncc @jdittrich @simonv3 @belenbarrospena @janushead @guiguru @HeikoTietze @bnvk @evalica "
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337527915",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100#issuecomment-337527915",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 337527915,
+        "user": {
+          "login": "bnvk",
+          "id": 48677,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bnvk",
+          "html_url": "https://github.com/bnvk",
+          "followers_url": "https://api.github.com/users/bnvk/followers",
+          "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+          "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+          "organizations_url": "https://api.github.com/users/bnvk/orgs",
+          "repos_url": "https://api.github.com/users/bnvk/repos",
+          "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/bnvk/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-18T09:42:32Z",
+        "updated_at": "2017-10-18T09:42:32Z",
+        "author_association": "OWNER",
+        "body": "w00t w00t, great @simonv3 great step and progress 👍 \r\n\r\nFor some reason I had to update the ID in your link to Discourse from 328 to 353, not sure why.\r\n\r\nHow does this currently get created? Is it 100% automated? Is that perhaps why the ID issue happened?"
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T09:42:35Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6731940919",
+    "type": "ForkEvent",
+    "actor": {
+      "id": 16765805,
+      "login": "SuperHaker",
+      "display_login": "SuperHaker",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/SuperHaker",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16765805?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "forkee": {
+        "id": 107387186,
+        "name": "opensourcedesign.github.io",
+        "full_name": "SuperHaker/opensourcedesign.github.io",
+        "owner": {
+          "login": "SuperHaker",
+          "id": 16765805,
+          "avatar_url": "https://avatars0.githubusercontent.com/u/16765805?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/SuperHaker",
+          "html_url": "https://github.com/SuperHaker",
+          "followers_url": "https://api.github.com/users/SuperHaker/followers",
+          "following_url": "https://api.github.com/users/SuperHaker/following{/other_user}",
+          "gists_url": "https://api.github.com/users/SuperHaker/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/SuperHaker/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/SuperHaker/subscriptions",
+          "organizations_url": "https://api.github.com/users/SuperHaker/orgs",
+          "repos_url": "https://api.github.com/users/SuperHaker/repos",
+          "events_url": "https://api.github.com/users/SuperHaker/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/SuperHaker/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "private": false,
+        "html_url": "https://github.com/SuperHaker/opensourcedesign.github.io",
+        "description": ":art: :computer: :smile: source code of our website",
+        "fork": true,
+        "url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io",
+        "forks_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/forks",
+        "keys_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/keys{/key_id}",
+        "collaborators_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/collaborators{/collaborator}",
+        "teams_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/teams",
+        "hooks_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/hooks",
+        "issue_events_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/issues/events{/number}",
+        "events_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/events",
+        "assignees_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/assignees{/user}",
+        "branches_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/branches{/branch}",
+        "tags_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/tags",
+        "blobs_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/blobs{/sha}",
+        "git_tags_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/tags{/sha}",
+        "git_refs_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/refs{/sha}",
+        "trees_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/trees{/sha}",
+        "statuses_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/statuses/{sha}",
+        "languages_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/languages",
+        "stargazers_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/stargazers",
+        "contributors_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/contributors",
+        "subscribers_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/subscribers",
+        "subscription_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/subscription",
+        "commits_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/commits{/sha}",
+        "git_commits_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/git/commits{/sha}",
+        "comments_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/comments{/number}",
+        "issue_comment_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/issues/comments{/number}",
+        "contents_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/contents/{+path}",
+        "compare_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/compare/{base}...{head}",
+        "merges_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/merges",
+        "archive_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/{archive_format}{/ref}",
+        "downloads_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/downloads",
+        "issues_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/issues{/number}",
+        "pulls_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/pulls{/number}",
+        "milestones_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/milestones{/number}",
+        "notifications_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/notifications{?since,all,participating}",
+        "labels_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/labels{/name}",
+        "releases_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/releases{/id}",
+        "deployments_url": "https://api.github.com/repos/SuperHaker/opensourcedesign.github.io/deployments",
+        "created_at": "2017-10-18T09:32:47Z",
+        "updated_at": "2017-10-16T14:07:44Z",
+        "pushed_at": "2017-10-17T17:54:26Z",
+        "git_url": "git://github.com/SuperHaker/opensourcedesign.github.io.git",
+        "ssh_url": "git@github.com:SuperHaker/opensourcedesign.github.io.git",
+        "clone_url": "https://github.com/SuperHaker/opensourcedesign.github.io.git",
+        "svn_url": "https://github.com/SuperHaker/opensourcedesign.github.io",
+        "homepage": "http://opensourcedesign.net",
+        "size": 19637,
+        "stargazers_count": 0,
+        "watchers_count": 0,
+        "language": null,
+        "has_issues": false,
+        "has_projects": true,
+        "has_downloads": true,
+        "has_wiki": false,
+        "has_pages": false,
+        "forks_count": 0,
+        "mirror_url": null,
+        "open_issues_count": 0,
+        "forks": 0,
+        "open_issues": 0,
+        "watchers": 0,
+        "default_branch": "master",
+        "public": true
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T09:32:47Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6731938298",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/147",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/147/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/147/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/147/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/147",
+        "id": 266270152,
+        "number": 147,
+        "title": "Add link to people form somewhere on the site",
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-10-17T20:37:45Z",
+        "updated_at": "2017-10-18T09:32:13Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Right now the [people form](http://opensourcedesign.net/people-form/) exists, but it's not findable. We should let people find it. Where does it make sense to add?\r\n\r\nI think overall it would make sense in a \"Are you a designer\" section, but we'd need one like that.\r\n\r\nhttps://github.com/opensourcedesign/organization/pull/100\r\n\r\ncc @evalica "
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337524363",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/147#issuecomment-337524363",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/147",
+        "id": 337524363,
+        "user": {
+          "login": "bnvk",
+          "id": 48677,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bnvk",
+          "html_url": "https://github.com/bnvk",
+          "followers_url": "https://api.github.com/users/bnvk/followers",
+          "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+          "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+          "organizations_url": "https://api.github.com/users/bnvk/orgs",
+          "repos_url": "https://api.github.com/users/bnvk/repos",
+          "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/bnvk/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-18T09:32:13Z",
+        "updated_at": "2017-10-18T09:32:13Z",
+        "author_association": "OWNER",
+        "body": "I think this should be a \"call to action\" as part of something like **Join Us** or **Participate** which also plays into the [contribute page](https://opensourcedesign.net/contribute/) which I also think needs some love and to be more featured. I have some ideas, but those of others are much appreciated :)"
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T09:32:13Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6731884465",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/148",
+        "id": 266383485,
+        "number": 148,
+        "title": "Styling on job form thank you page is broken",
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-10-18T07:19:25Z",
+        "updated_at": "2017-10-18T09:20:49Z",
+        "closed_at": "2017-10-18T09:14:11Z",
+        "author_association": "OWNER",
+        "body": "Probably because the bootstrap stuff was moved recently?\r\n\r\nhttp://opensourcedesign.net/jobs/thank-you/\r\n\r\nhttps://github.com/opensourcedesign/jobs/blob/master/thankyou.html\r\n\r\n"
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337520421",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/148#issuecomment-337520421",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148",
+        "id": 337520421,
+        "user": {
+          "login": "bnvk",
+          "id": 48677,
+          "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bnvk",
+          "html_url": "https://github.com/bnvk",
+          "followers_url": "https://api.github.com/users/bnvk/followers",
+          "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+          "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+          "organizations_url": "https://api.github.com/users/bnvk/orgs",
+          "repos_url": "https://api.github.com/users/bnvk/repos",
+          "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/bnvk/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-18T09:20:49Z",
+        "updated_at": "2017-10-18T09:20:49Z",
+        "author_association": "OWNER",
+        "body": "Was because that file (for some inexplicable reason) did *not* have the `layout: default` value decalred in Front-Matter and instead had the whole HTML page..."
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T09:20:50Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6731853791",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 48677,
+      "login": "bnvk",
+      "display_login": "bnvk",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/bnvk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48677?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "closed",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/148",
+        "id": 266383485,
+        "number": 148,
+        "title": "Styling on job form thank you page is broken",
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-10-18T07:19:25Z",
+        "updated_at": "2017-10-18T09:14:11Z",
+        "closed_at": "2017-10-18T09:14:11Z",
+        "author_association": "OWNER",
+        "body": "Probably because the bootstrap stuff was moved recently?\r\n\r\nhttp://opensourcedesign.net/jobs/thank-you/\r\n\r\nhttps://github.com/opensourcedesign/jobs/blob/master/thankyou.html\r\n\r\n"
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T09:14:11Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6731373375",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 485583,
+      "login": "simonv3",
+      "display_login": "simonv3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/simonv3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/485583?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/148/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/148",
+        "id": 266383485,
+        "number": 148,
+        "title": "Styling on job form thank you page is broken",
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-10-18T07:19:25Z",
+        "updated_at": "2017-10-18T07:19:25Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Probably because the bootstrap stuff was moved recently?\r\n\r\nhttp://opensourcedesign.net/jobs/thank-you/\r\n\r\nhttps://github.com/opensourcedesign/jobs/blob/master/thankyou.html\r\n\r\n"
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-18T07:19:25Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6729569037",
+    "type": "IssuesEvent",
+    "actor": {
+      "id": 485583,
+      "login": "simonv3",
+      "display_login": "simonv3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/simonv3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/485583?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "opened",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/147",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/147/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/147/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/147/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/147",
+        "id": 266270152,
+        "number": 147,
+        "title": "Add link to people form somewhere on the site",
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-10-17T20:37:45Z",
+        "updated_at": "2017-10-17T20:37:45Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Right now the people form exists, but it's not findable. We should let people find it. Where does it make sense to add?\r\n\r\nI think overall it would make sense in a \"Are you a designer\" section, but we'd need one like that.\r\n\r\nhttps://github.com/opensourcedesign/organization/pull/100\r\n\r\ncc @evalica "
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-17T20:37:45Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  },
+  {
+    "id": "6729555057",
+    "type": "IssueCommentEvent",
+    "actor": {
+      "id": 485583,
+      "login": "simonv3",
+      "display_login": "simonv3",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/simonv3",
+      "avatar_url": "https://avatars.githubusercontent.com/u/485583?"
+    },
+    "repo": {
+      "id": 30500296,
+      "name": "opensourcedesign/opensourcedesign.github.io",
+      "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io"
+    },
+    "payload": {
+      "action": "created",
+      "issue": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "repository_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io",
+        "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/labels{/name}",
+        "comments_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/comments",
+        "events_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100/events",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 223356099,
+        "number": 100,
+        "title": "It should be possible to interact/comment on each job",
+        "user": {
+          "login": "jancborchardt",
+          "id": 925062,
+          "avatar_url": "https://avatars2.githubusercontent.com/u/925062?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jancborchardt",
+          "html_url": "https://github.com/jancborchardt",
+          "followers_url": "https://api.github.com/users/jancborchardt/followers",
+          "following_url": "https://api.github.com/users/jancborchardt/following{/other_user}",
+          "gists_url": "https://api.github.com/users/jancborchardt/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/jancborchardt/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/jancborchardt/subscriptions",
+          "organizations_url": "https://api.github.com/users/jancborchardt/orgs",
+          "repos_url": "https://api.github.com/users/jancborchardt/repos",
+          "events_url": "https://api.github.com/users/jancborchardt/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/jancborchardt/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 175013772,
+            "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/labels/enhancement",
+            "name": "enhancement",
+            "color": "84b6eb",
+            "default": true
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [
+
+        ],
+        "milestone": {
+          "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1",
+          "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/milestone/1",
+          "labels_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/milestones/1/labels",
+          "id": 2399335,
+          "number": 1,
+          "title": "Job Board Reboot",
+          "description": "We have a barely functioning (but has had some success) job board. We have lots of issues & ideas of how to improve it, let's try to get a lot of these hammered out and implemented sooner rather than later. \r\n\r\nI'm setting a goal to achieve this for OSCAL 2017",
+          "creator": {
+            "login": "bnvk",
+            "id": 48677,
+            "avatar_url": "https://avatars1.githubusercontent.com/u/48677?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/bnvk",
+            "html_url": "https://github.com/bnvk",
+            "followers_url": "https://api.github.com/users/bnvk/followers",
+            "following_url": "https://api.github.com/users/bnvk/following{/other_user}",
+            "gists_url": "https://api.github.com/users/bnvk/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/bnvk/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/bnvk/subscriptions",
+            "organizations_url": "https://api.github.com/users/bnvk/orgs",
+            "repos_url": "https://api.github.com/users/bnvk/repos",
+            "events_url": "https://api.github.com/users/bnvk/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/bnvk/received_events",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 7,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2017-03-20T22:41:47Z",
+          "updated_at": "2017-04-25T14:19:14Z",
+          "due_on": "2017-05-13T07:00:00Z",
+          "closed_at": null
+        },
+        "comments": 1,
+        "created_at": "2017-04-21T11:25:54Z",
+        "updated_at": "2017-10-17T20:34:57Z",
+        "closed_at": null,
+        "author_association": "OWNER",
+        "body": "Some big problems with the job board at the moment are:\r\n\r\n- it’s very static, discussion is difficult to start\r\n- you don’t know the state of it, if it’s taken already\r\n- we don’t know if it’s done\r\n\r\nAs far as I know it’s possible to embed Discourse thread replies in a website. We could have a category in the Discourse called »Jobs« (you can’t create posts but will be led to the [job submission form](http://opensourcedesign.net/jobs/job-form/)), and one thread per job. Then on every job there’s the discussion thread below.\r\n@erlend-sh could you point us how to do that maybe? :)\r\n\r\nWe do have to require that the people have to register at Discourse though and be subscribed to the issue. But maybe that can be automated and will lead to growth.\r\n\r\ncc @jdittrich @simonv3 @belenbarrospena @janushead @guiguru @HeikoTietze @bnvk @evalica "
+      },
+      "comment": {
+        "url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/comments/337362210",
+        "html_url": "https://github.com/opensourcedesign/opensourcedesign.github.io/issues/100#issuecomment-337362210",
+        "issue_url": "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/issues/100",
+        "id": 337362210,
+        "user": {
+          "login": "simonv3",
+          "id": 485583,
+          "avatar_url": "https://avatars3.githubusercontent.com/u/485583?v=4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simonv3",
+          "html_url": "https://github.com/simonv3",
+          "followers_url": "https://api.github.com/users/simonv3/followers",
+          "following_url": "https://api.github.com/users/simonv3/following{/other_user}",
+          "gists_url": "https://api.github.com/users/simonv3/gists{/gist_id}",
+          "starred_url": "https://api.github.com/users/simonv3/starred{/owner}{/repo}",
+          "subscriptions_url": "https://api.github.com/users/simonv3/subscriptions",
+          "organizations_url": "https://api.github.com/users/simonv3/orgs",
+          "repos_url": "https://api.github.com/users/simonv3/repos",
+          "events_url": "https://api.github.com/users/simonv3/events{/privacy}",
+          "received_events_url": "https://api.github.com/users/simonv3/received_events",
+          "type": "User",
+          "site_admin": false
+        },
+        "created_at": "2017-10-17T20:34:57Z",
+        "updated_at": "2017-10-17T20:34:57Z",
+        "author_association": "OWNER",
+        "body": "Okay! This has been implemented but it can use a _lot_ of improvement. \r\n\r\nI think a lot of that improvement will come from figuring out the formatting and the markdown, eg.:\r\n\r\nhttps://discourse.opensourcedesign.net/t/jobs-libreoffice-mascot/328\r\n\r\nhttp://opensourcedesign.net/jobs/jobs/2017-06-28-libreoffice-mascot\r\n\r\nYay \\o/\r\n\r\ncc @bnvk @jancborchardt @evalica "
+      }
+    },
+    "public": true,
+    "created_at": "2017-10-17T20:34:57Z",
+    "org": {
+      "id": 4183553,
+      "login": "opensourcedesign",
+      "gravatar_id": "",
+      "url": "https://api.github.com/orgs/opensourcedesign",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4183553?"
+    }
+  }
+]

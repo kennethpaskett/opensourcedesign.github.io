@@ -10,15 +10,26 @@ A list of people who work on free / open source software, either as designers or
 
 <ul>
   {% for person in site.people %}
-    {% if person.status == 'core' or person.status == 'active'%}
-      <li><a href="#{{person.slug}}">{{ person.name }}</a></li>
+    {% if person.status == "core" or person.status == "active" %}
+      <li>
+        <a href="#{{person.slug}}">
+            {{ person.name }}
+            {% if person.status == "core" %}
+            <i class="fa fa-star" aria-hidden="true"></i>
+            {% endif %}
+        </a>
+    </li>
     {% endif %}
   {% endfor %}
 </ul>
 
-### Add Yourself
+## Add Yourself
 
-Want to add yourself to this list? Do the following:
+Want to add yourself to this list? 
+
+<a href="/people-form/" class="btn btn-primary">Add Yourself</a>
+
+Or if you prefer technical approach, do the following:
 
 * Sign in / up to Github
 * Fork this repository
