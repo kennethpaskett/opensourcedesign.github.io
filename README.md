@@ -59,7 +59,7 @@ in there proper place to build our website locally.
 4. Build the static site & watch for files 
 
 ```
-jekyll serve --watch --config _config.yml,_config-dev.yml
+jekyll serve --watch --config _config.yml,_config-local.yml
 ```
 
 ### Updating

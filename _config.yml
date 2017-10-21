@@ -1,6 +1,6 @@
 # Site settings
 title: Open Source Design
-email:
+email: core@opensourecedesign.net
 description: > # this means to ignore newlines until "baseurl:"
   We are a community of designers and developers aiming to push more
   open design processes and improve the user experience and interface
@@ -12,19 +12,33 @@ url_source: "https://github.com/opensourcedesign/opensourcedesign.github.io/blob
 url_edit: "https://edit.opensourcedesign.net/#opensourcedesign/opensourcedesign.github.io/edit/master/"
 url_github_api: "https://api.github.com/repos/opensourcedesign/opensourcedesign.github.io/events"
 
+keep_files: [
+  "media"
+]
+
+# Sub-Repos
+#include: [
+#  "_posts/events",
+#  "_posts/jobs",
+#  "_organization",
+#  "_patterns",
+#  "_talks"
+#]
+
 exclude: [
-    "_organization/README.md",
-    "_patterns/README.md",
-    "_posts/events/README.md",
-    "_posts/jobs/README.md",
-    "_talks/README.md",
-    "grunt",
-    "node_modules",
-    "package.json",
-    "README.md",
-    "sass",
-    "scripts",
-    "vendor"
+  "_organization/README.md",
+  "_patterns/README.md",
+  "_posts/events/README.md",
+  "_posts/jobs/README.md",
+  "_talks/README.md",
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules/",
+  "Rakefile",
+  "README.md",
+  "sass/",
+  "scripts/",
+  "vendor/"
 ]
 
 twitter_username: opensrcdesign
@@ -41,6 +55,41 @@ collections:
   people:
     output: true
     permalink: /people/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_posts/articles"
+      type: "posts"
+    values:
+      layout: "post"
+      author: "osd"
+      category: "articles"
+      permalink: /articles/:slug
+  -
+    scope:
+      path: "_posts/events"
+      type: "posts"
+    values:
+      layout: "event"
+      category: "events"
+      permalink: /events/:year/:month/:slug
+  -
+    scope:
+      path: "_posts/jobs"
+      type: "posts"
+    values:
+      layout: "jobs"
+      category: "jobs"
+      permalink: /jobs/:year/:slug
+
+permalink: pretty
 
 sass:
     style: compressed

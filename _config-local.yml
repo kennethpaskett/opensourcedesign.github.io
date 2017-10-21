@@ -1,5 +1,8 @@
 # Local Server
-url: "https://dev.opensourcedesign.net"
+local: true
+host: localhost
+port: 4000
+url: "http://localhost:4000/"
 
 # Sub-Repos
 include: [
