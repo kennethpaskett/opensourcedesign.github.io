@@ -7,7 +7,7 @@ categories:
   - communities
   - collaboration
   - tools
-  - design
+  - articles
 authors:
   - studiospring
 ---

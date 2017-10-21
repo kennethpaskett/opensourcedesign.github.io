@@ -2,14 +2,16 @@
 layout: post
 date: 2015-05-18
 title: "This Month in Open Source Design"
-category: monthly-update
+category: 
+  - monthly-update
+  - articles
 authors:
   - simonv3
   - jdittrich
   - garthdb
 redirect_from: 
   - /monthly-update/2015/05/18/this-month-in-open-source-design.html
-permalink: /2015/05/18/this-month-in-open-source-design
+  - /2015/05/18/this-month-in-open-source-design
 ---
 
 # In IRC

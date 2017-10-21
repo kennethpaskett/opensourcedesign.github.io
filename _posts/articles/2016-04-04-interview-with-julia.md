@@ -2,9 +2,14 @@
 layout: post
 title:  "Designers in Open Source: julia"
 date:   2016-11-22
+categories: 
+  - design
+  - designer 
+  - open-source
+  - interview
+  - articles
 authors:
   - jsimplicio
-categories: design open-source designer interview
 ---
 
 ## What is it that you do?
