@@ -16,14 +16,11 @@ keep_files: [
   "media"
 ]
 
-# Sub-Repos
-#include: [
-#  "_posts/events",
-#  "_posts/jobs",
-#  "_organization",
-#  "_patterns",
-#  "_talks"
-#]
+include: [
+  "_organization",
+  "_patterns",
+  "_talks"
+]
 
 exclude: [
   "_organization/README.md",

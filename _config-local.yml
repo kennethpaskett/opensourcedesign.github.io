@@ -6,8 +6,6 @@ url: "http://localhost:4000/"
 
 # Sub-Repos
 include: [
-    "_posts/events",
-    "_posts/jobs",
     "_organization",
     "_patterns",
     "_talks"

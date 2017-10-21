@@ -1,11 +1,2 @@
-# Local Server
+# Dev Server
 url: "https://dev.opensourcedesign.net"
-
-# Sub-Repos
-include: [
-    "_posts/events",
-    "_posts/jobs",
-    "_organization",
-    "_patterns",
-    "_talks"
-]
